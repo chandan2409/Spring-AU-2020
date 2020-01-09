@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mainclass{
+display: flex;
+padding-top:50%;
+padding-left: 25%;
+}
+.mainbar{
+                border: 1px solid black ;
+                width:500px;
+
+
+            }
+
+.progressbar {
+  width: 500px;
+  height: 50px;
+  background-color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+ 0%   {background-color: black;
+  width:100px;}
+  25%  {background-color: yellow;
+  width:200px;}
+  50%  {background-color: blue;width:300px}
+ 
+  75%  {background-color: red;width:400px}
+
+  100% {background-color: green;width:500px}
+}
+
+/* Standard syntax */
+@keyframes example {
+   0%   {background-color: black;
+  width:100px;}
+  25%  {background-color: yellow;
+  width:200px;}
+  50%  {background-color: blue;width:300px}
+ 
+  75%  {background-color: red;width:400px}
+
+  100% {background-color: green;width:500px}
+ 
+}
+</style>
+</head>
+<body>
+
+
+<div class="mainclass" >
+<span>0%</span>
+
+<div class="mainbar">
+        <div class="progressbar">
+           
+        </div>
+       </div>
+<span>100%</span>
+</div>
+</body>
+</html>

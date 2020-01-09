@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:aqua;
+}
+html{
+  scroll-behavior: smooth;
+}
+#about
+{
+    height:700px;
+    background-image:url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#technicalskills
+{
+    height: 700px;
+}
+#project
+{
+    height:700px;
+}
+#contact
+{
+    height:700px;
+}
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 50px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 50px;
+}
+.container1{
+  width: 50%;
+  
+  background-color: #ddd;
+}
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+</style>
+</head>
+<body>
+<div style="position: fixed;z-index: 1;width: 100%;">
+<ul>
+    <li><a class="active" href="#">About Me</a></li>
+    <li><a href="#technicalskills">Technical Skills</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+
+</ul>
+</div>
+<div id="about" style="position:relative;height: 700px;top:50px">
+    <div style="background-image:url('chandan.jpeg');position:relative;left:50%;width: 200px;height: 200px;border-radius: 50%;background-size:cover;background-repeat: no-repeat;"></div>
+    <div style="color: aqua;font-family: cursive;font-size:x-large;">
+    <h2>About Me</h2>
+    <p>I am a cool person who loves exploring new technologies. I love attending workshops or lectures that always help me to build my technical skills. I posses great leadership qualities as I always take up responsibilities on managing events or organizing tour. I lead people and I also love working with my peers. I at occassions take up the task of teaching my fellow mates to inculcate the knowledge in them that I have.
+      And ya I am an athlete plus a Volley ball player too...... Anything else?</p>
+    </div>
+</div>
+<div id="technicalskills" style="background-image:url('skills.jpeg');background-size:cover;background-repeat: no-repeat;height:700px;position: relative;padding-top: 50px;">
+    <h1>My Skills</h1>
+
+    <p>HTML</p>
+    <div class="container">
+      <div class="skills html">90%</div>
+    </div>
+    
+    <p>CSS</p>
+    <div class="container">
+      <div class="skills css">80%</div>
+    </div>
+    
+    <p>JavaScript</p>
+    <div class="container">
+      <div class="skills js">65%</div>
+    </div>
+    
+    <p>PHP</p>
+    <div class="container">
+      <div class="skills php">60%</div>
+    </div>
+</div>
+<div id="project" style="color:#ccc;background-image:url('project.jpg');background-size: cover;background-repeat: no-repeat;height:700px;position: relative;padding-top: 50px;">
+    <h1>Project</h1>
+    <div id="project1">
+    <h3>Healthcare infographic using blockchain:</h3>
+    <p>A Blockchain based project developed to keep track of patient records and it is
+      useful in keeping track of the entire manufacturing chain of the drug.</p>
+  </div>
+    <div id="project2">
+      <h3> Resume parser</h3>
+      <p>A python project to parse information such as Name, Email, Phone Number,
+  skillset and the technology associated with it. The gender is predicted using naive bayes
+  algorithm.</p>
+  </div>
+  </div>
+<div id="contact" style="height:700px;position: relative;padding-top: 50px;left:50px">
+    <h3 style="text-align: center;">Contact Form</h3>
+
+    <div class="container1">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+</div>
+<div>
+    <a href="https://www.facebook.com/chandan.chanda.5" class="fa fa-facebook"></a><span>chandanchanda</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/chandan-chanda0906/" class="fa fa-linkedin"></a><span>chandanchanda</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="skype:live:chandanchanda66?chat" class="fa fa-skype"></a><span>chandanchanda</span>&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  </div>
+</body>
+</html>
