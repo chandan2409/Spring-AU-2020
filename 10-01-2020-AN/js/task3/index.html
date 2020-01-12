@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            login page
+        </title>
+        <script src="validation.js"></script>
+        <style>
+        .login
+        {
+            justify-content: center;
+            align-content: center;
+            padding-top: 30%;
+            padding-left: 40%;
+            width: 50%;
+            height: 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="successful_message" style="color: green;background-color: aquamarine;">
+        </div>
+        <div class="login">
+            <div>
+            <span>User Name</span><br/>
+            <input id="username" type="text" placeholder="User Name"><br/>
+            <span id="namemsg" style="color: red;display: none;">Username can't be null</span><br/>
+            <span>Password</span><br/>
+            <input id="password" type="password" placeholder="Password"><br/>
+            <span id="passwordmsg" style="color: red;display: none;" ></span><br/>
+            <span>Confirm password</span><br/>
+            <input id="confirmpassword" type="password" placeholder="Confirm Password"><br/><br/>
+            <span id="confirmpasswordmsg" style="color: red;display: none;" ></span><br/><br/>
+            <button onclick="submit()">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
