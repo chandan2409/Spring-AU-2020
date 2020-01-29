@@ -1,0 +1,6 @@
+debug Message!
+  info Message!
+  Warn Message!
+  Error Message!
+  Fatal Message
+  
